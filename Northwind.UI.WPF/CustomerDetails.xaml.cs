@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Northwind.UI.WPF
 {
     /// <summary>
-    /// Interaction logic for BTool.xaml
+    /// Interaction logic for CustomerDetails.xaml
     /// </summary>
-    public partial class BTool : UserControl
+    public partial class CustomerDetails : UserControl
     {
-        public BTool()
+        public CustomerDetails()
         {
             InitializeComponent();
         }

@@ -10,7 +10,8 @@ namespace Northwind.ViewModel
     {
         public string DisplayName { get; set; }
     }
-    public class AToolViewModel : ToolViewModel
+  /*
+   * public class AToolViewModel : ToolViewModel
     {
         public AToolViewModel()
         {
@@ -23,5 +24,6 @@ namespace Northwind.ViewModel
         {
             DisplayName = "B";
         }
-    }
+    }-
+    */
 }

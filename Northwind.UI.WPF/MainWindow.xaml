@@ -41,11 +41,20 @@
                         </TextBlock.LayoutTransform>
                     </TextBlock>
                 </Expander.Header>
-                <ListBox ItemsSource="{Binding Customers}"
-                        DisplayMemberPath="CompanyName"
-                        VerticalAlignment="Top"
-                        Height="180"
-                        Width="250" />
+                <StackPanel>
+                    <ListBox ItemsSource="{Binding Customers}"
+                            DisplayMemberPath="CompanyName"
+                            SelectedValuePath="CustomerID"
+                            VerticalAlignment="Top"
+                            SelectedValue="{Binding SelectedCustomerID}"
+                            Height="180"
+                            Width="250" />
+                    <ContentControl Margin="0,3">
+                        <Hyperlink Click="Hyperlink_Click">
+                            <TextBlock Text="Show_Details"/>
+                        </Hyperlink>
+                    </ContentControl>
+                </StackPanel>
             </Expander>
             <TabControl ItemsSource="{Binding Tools}"
                 Margin="4"
