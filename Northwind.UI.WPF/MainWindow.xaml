@@ -47,10 +47,15 @@
                         Height="180"
                         Width="250" />
             </Expander>
-            <TabControl Margin="4"
-                        Grid.Row="0"
-                        Grid.Column="1"
-                        IsSynchronizedWithCurrentItem="True">
+            <TabControl ItemsSource="{Binding Tools}"
+                Margin="4"
+                Grid.Row="0"
+                Grid.Column="1">
+                <TabControl.ItemTemplate>
+                    <DataTemplate>
+                        <ContentPresenter Content="{Binding DisplayName}" />
+                    </DataTemplate>
+                </TabControl.ItemTemplate>
             </TabControl>
         </Grid>
     </DockPanel>

@@ -1,5 +1,13 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:WPF="clr-namespace:Northwind.UI.WPF"
+                    xmlns:ViewModel="clr-namespace:Northwind.ViewModel;assembly=Northwind.ViewModel">
+    <DataTemplate DataType="{x:Type ViewModel:AToolViewModel}">
+        <WPF:ATool/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type ViewModel:BToolViewModel}">
+        <WPF:BTool />
+    </DataTemplate>
     <Color x:Key="mainBlue">#FF145E9D</Color>
     <SolidColorBrush x:Key="mainBlueBrush" Color="{StaticResource mainBlue}" />
 </ResourceDictionary>
